@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testimonials",
+  "info": {
+    "singularName": "testimonial",
+    "pluralName": "testimonials",
+    "displayName": "Testimonial"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "company": {
+      "type": "string"
+    },
+    "testimonial_text": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "submission_date": {
+      "type": "datetime"
+    },
+    "approval_status": {
+      "type": "enumeration",
+      "default": "Pending",
+      "enumName": "status",
+      "enum": [
+        "Pending",
+        "Published",
+        "Rejected"
+      ]
+    }
+  }
+}
